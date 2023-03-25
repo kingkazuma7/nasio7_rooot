@@ -1,6 +1,6 @@
 import './App.scss';
 import { IconContext } from 'react-icons';
-import { FaGithub, FaTwitter, FaBlogger } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaBlogger, FaBook } from "react-icons/fa";
 import { Link, BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -10,21 +10,26 @@ function App() {
         <header className="App-header">
           <IconContext.Provider value={{ color: '#F2F2F2', size: ' 20px' }}>
             <div className="App-header__inner">
-              <Link 
+              <a 
                 className="App-link"
-                to="https://tech.nasio7.com/"
+                href="https://tech.nasio7.com/"
                 target="_blank"
-                rel="noopener noreferrer"><FaBlogger />Blog</Link>
-              <Link 
+                rel="noopener noreferrer"><FaBlogger />Blog</a>
+              <a 
                 className="App-link"
-                to="https://twitter.com/nasio777"
+                href="https://twitter.com/nasio777"
                 target="_blank"
-                rel="noopener noreferrer"><FaTwitter />Twitter</Link>
-              <Link 
+                rel="noopener noreferrer"><FaTwitter />Twitter</a>
+              <a 
                 className="App-link"
-                to="https://github.com/kingkazuma7"
+                href="https://github.com/kingkazuma7"
                 target="_blank"
-                rel="noopener noreferrer"><FaGithub />GitHub</Link>
+                rel="noopener noreferrer"><FaGithub />GitHub</a>
+              <a 
+                className="App-link"
+                href="https://bookmeter.com/users/1402463"
+                target="_blank"
+                rel="noopener noreferrer"><FaBook />積読</a>
             </div>
           </IconContext.Provider>
         </header>
