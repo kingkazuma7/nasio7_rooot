@@ -4,7 +4,7 @@
 html {
   font-size: 62.5%;
 }
-.App-header {
+.container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -12,6 +12,8 @@ html {
   align-items: center;
   justify-content: center;
   color: white;
+}
+.App-header {
   .App-link {
     @include fz(30);
     color: #61dafb;

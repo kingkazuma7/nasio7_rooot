@@ -2,10 +2,12 @@ import './App.scss';
 import { IconContext } from 'react-icons';
 import { FaGithub, FaTwitter, FaBlogger, FaBook } from "react-icons/fa";
 import { Link, BrowserRouter } from 'react-router-dom';
+import Profile from './component/Profile';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
+      <Profile />
       <BrowserRouter>
         <header className="App-header">
           <IconContext.Provider value={{ color: '#F2F2F2', size: ' 20px' }}>
